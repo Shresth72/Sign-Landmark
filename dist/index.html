@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="public/style.css" />
+  </head>
+
+  <body>
+    <main id="main">
+      <div id="begin_content">
+        <p class="title">Rock Paper Scissors</p>
+        <div id="load_view" class="loader"></div>
+        <p id="loading">Loading...</p>
+        <button id="begin_btn" class="mdc-button mdc-button--raised">
+          <span class="mdc-button__ripple"></span>
+          <span class="mdc-button__label">BEGIN</span>
+        </button>
+      </div>
+      <div id="play_content" style="display: none;">
+        <div id="result_text"></div>
+        <div id="next_round"> Ready for the next round? </div>
+        <div class="column">
+          <div class="row">
+            <ul id="computer_row" class="result">
+              <li>Computer Score:</li>
+              <li id="computer_result">0</li>
+            </ul>
+            <div id="video_content">
+              <p style="font-size: 200px;">?</p>
+            </div>
+          </div>
+          <div style="background-color: gray; width: 2px;"></div>
+          <div id="your_row_div" class="row">
+            <p id="waiting" class="waiting"></p>
+            <p id="show_hand" class="showhand">Show your hand in front<br>of the camera to get<br>started.
+            <p>
+            <ul id="your_row" class="result">
+              <li>Your Score:</li>
+              <li id="your_result">0</li>
+            </ul>
+            <div class="container">
+              <video id="input_video" class="input_video" playsinline></video>
+              <img id="capture_image">
+            </div>
+            <button id="restart_btn" class="mdc-button mdc-button--raised">
+              <span class="mdc-button__ripple"></span>
+              <span class="mdc-button__label">RESTART</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  
+    <script src="public/script.js"></script>
+  </body>
+</html>
